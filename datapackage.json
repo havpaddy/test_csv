@@ -1,0 +1,83 @@
+{
+  "name": "fisk",
+  "description": "Some fish test data",
+  "sources": [{
+    "name": "swam_test",
+    "title": "SwAM test data validation",
+    "web": "Na"
+  }],
+  "resources": [
+    {
+      "name": "fisk",
+      "path": "data/fisk.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "SJÖID",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "NAMN",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "DATUM1",
+            "type": "date",
+            "constraints": {
+              "required": true,
+            }
+          },
+          {
+            "name": "NÄTNR",
+            "type": "integer",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "MASKA",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "FISKART",
+            "type": "string",
+           "constraints": {
+              "required": false
+            }
+ 
+          },
+          {
+            "name": "ANTAL",
+            "type": "integer",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "TOTVIKT",
+            "type": "integer",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "ANMÄRKNINGAR",
+            "type": "string",
+           "constraints": {
+              "required": false
+            }
+          }
+        ]
+      }
+    },
+  ]
+}
